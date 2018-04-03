@@ -1,4 +1,5 @@
-#repos-list li {
+#repos-list li,
+#pull-requests-list li {
     list-style: disc
 }
 .loader {
