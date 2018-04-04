@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="ISLAM DUDAEV">
 
-    <title>Resume - My Name</title>
+    <title>Resume - Islam Dudaev</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,9 +30,9 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Start Bootstrap</span>
+        <span class="d-block d-lg-none">Resume</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="../img/profile.png" alt="">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="../img/my_profile.png" alt="">
         </span>
       </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -68,17 +68,19 @@
                     I have
                     <a href="#" id="repos-count">x</a> repos on my Github.
                 </div>
-
-                <p class="mb-5">Use AJAX to load your repos from your Github and show them on this page.</p>
-
+                <label for="search-box">Search for GitHub user:</label>
+                <div id="search" class="input-group">
+                    <input type="text" name="search-box" id="search-box" class="form-control" placeholder="Enter username..." />
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button" id="searchBtn">Search</button>
+                    </span>
+                </div>
+                <div class="loader"></div>
                 <ul id="repos-list" class="list-inline list-social-icons mb-0">
-                    <li>
-                        Your list of repos should appear here
-                    </li>
+                    
                 </ul>
             </div>
         </section>
-
 
     </div>
 
