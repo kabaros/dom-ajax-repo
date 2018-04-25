@@ -10,11 +10,23 @@ function appendPullRequestLink(pullRequest) {
 }
 
 // var myPullRequestLink = document.getElementById("pull-Request-list");
+// fetch("https://api.github.com/repos/codeyourfuture/js-exercises/pulls")
+//   .then(function(response) {
+//     return response.json();
+//   })
+//   .then(function(messages) {
+//     messages.forEach(appendPullRequestLink);
+//     displayPullRequestCount(messages.length);
+//   });
+
 fetch("https://api.github.com/repos/codeyourfuture/js-exercises/pulls")
   .then(function(response) {
     return response.json();
   })
   .then(function(messages) {
-    messages.forEach(appendPullRequestLink);
-    displayPullRequestCount(messages.length);
+    messages
+      .filter(function(message) {
+        return message.user.login === "okolochuks";
+      })
+      .forEach(appendPullRequestLink);
   });
