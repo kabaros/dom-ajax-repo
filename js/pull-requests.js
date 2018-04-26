@@ -24,9 +24,10 @@ fetch("https://api.github.com/repos/codeyourfuture/js-exercises/pulls")
     return response.json();
   })
   .then(function(messages) {
+    console.log(messages);
     messages
-      .filter(function(message) {
-        return message.user.login === "okolochuks";
-      })
+      // .filter(function(message) {
+      //   return message.user.login === "okolochuks";
+      // })
       .forEach(appendPullRequestLink);
   });
