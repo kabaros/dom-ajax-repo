@@ -36,7 +36,7 @@ The documentation for the `repos` endpoint is available on: [https://developer.g
 
 For the above requirements, you need to use the API:
 
-> GET https://api.github.com/users/*YOUR GITHUB USERNAME*/repos
+> GET https://api.github.com/users/abdulkadiret/repos
 
 Where do I write the code for Part 1 requirements?
 
